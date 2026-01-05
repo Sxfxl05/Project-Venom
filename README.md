@@ -28,5 +28,14 @@ Project Venom is a high-integrity honeypot system deployed on AWS to monitor rea
 3. **The Analysis**: The Python 'Stinger' parses logs and queries Geolocation APIs for attribution.
 4. **The Strike**: Formatted alerts are pushed to the administrator's mobile device.
 
+## 🔄 Evolution: Overcoming Venom 1.0
+The initial prototype (v1.0) suffered from operational fragility. Administrative ports were exposed to the public internet, and processes required manual intervention.
+
+**Venom 2.0 improvements:**
+- **Hardened Ingress:** Successfully migrated to a "Least Privilege" network model by restricting administrative access to a single source IP.
+- **Autonomous Operations:** Transitioned from manual execution to a fully managed systemd architecture, achieving 100% process persistence.
+- **Containerized Isolation:** Moved decoy services into Docker to decouple the threat environment from the host operating system.
+
 ---
+
 *Note: This repository is for educational and portfolio purposes. Actual credentials and private keys have been removed to maintain secret management integrity.*
