@@ -1,0 +1,13 @@
+[Unit]
+Description=Project Venom Telegram Stinger Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/project-venom
+ExecStart=/usr/bin/python3 /home/ubuntu/project-venom/stinger.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
